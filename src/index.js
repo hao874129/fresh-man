@@ -1,6 +1,7 @@
-import React, { StrictMode } from 'react'
+import React from 'react'
+// import { StrictMode } from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
+// import './index.css'
 import reportWebVitals from './reportWebVitals'
 
 // 背景泡泡
@@ -20,16 +21,16 @@ const theme = createTheme({
     'main-color': {
       main: "#5f6d89"
     },
-    primary:{
+    primary: {
       main: "#d1dddb"
     },
-    'main-lighter':  {
+    'main-lighter': {
       main: "#d1dddb"
     },
-    'main-darker':  {
+    'main-darker': {
       main: "#374157"
     },
-    'second-color':  {
+    'second-color': {
       main: "#7f8fb0"
     },
   },
@@ -39,9 +40,9 @@ const theme = createTheme({
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <ThemeProvider theme={theme}>
-    <StrictMode>
+    {/* <StrictMode> */}
       <App />
-    </StrictMode>
+    {/* </StrictMode> */}
   </ThemeProvider>
 )
 

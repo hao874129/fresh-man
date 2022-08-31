@@ -1,0 +1,59 @@
+.study_card {
+  min-height: 400px;
+  width: 90%;
+  position: relative;
+  padding: 4rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #374157;
+  margin-bottom: 50px;
+  background-image: url("../images/studyCardBG3.jpg");
+  background-size: cover;
+}
+
+.study_card_part_name {
+  color: #d1dddb;
+  text-shadow: 3px 3px 1px #374157;
+  writing-mode: vertical-rl;
+}
+
+.study_card_inner {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  background: #d1dddb;
+  border: 2px solid #374157;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+.study_card_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+  margin-right: 20%;
+}
+
+
+.study_card_title {
+  text-align: center;
+  color: #374157;
+  text-shadow: 0px 2px 2px #d1dddb;
+  /* left: 95%; */
+  padding-left: 5%;
+}
+
+.study_card2 {
+  flex-direction: row;
+  background-image: url("../images/studyCardBG2.jpg");
+}
+
+.study_card3 {
+  background-image: url("../images/studyCardBG5.jpg");
+}

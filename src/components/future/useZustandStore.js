@@ -3,12 +3,12 @@ import create from 'zustand'
 const useZustandStore = create((set) => ({
   short: [
     { id: 's1', content: "認識公司的全部人" },
-    { id: 's2', content: "學好前端技術(React...)" },
-    { id: 's3', content: "學會左手切入" },
-    { id: 's4', content: "脫" }
+    { id: 's2', content: "精進前端技術(React...)" },
+    { id: 's3', content: "籃球學會左手切入" },
+    { id: 's4', content: "交女友" }
   ],
   med: [
-    { id: 'm1', content: "學好英文" },
+    { id: 'm1', content: "精進英文能力" },
     { id: 'm2', content: "具備獨立完成專案的能力" }
   ],
   long: [

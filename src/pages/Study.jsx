@@ -1,57 +1,52 @@
 import {
   NavLink,
   Outlet,
-  useSearchParams,
 } from "react-router-dom"
 import { getSchools } from "../components/study/StudySchoolData"
 
+// Study style
+import '../assets/css/study.css'
+
+import Typography from '@mui/material/Typography'
+
 export default function App() {
   let Schools = getSchools()
-  // useSearchParams 用來在 input 內搜尋想要的學習階段
-  let [searchParams, setSearchParams] = useSearchParams()
+  let School = Schools
+    .map((School) => (
+      <NavLink
+        style={({ isActive }) => {
+          return {
+            textDecoration: 'none',
+            display: "block",
+            margin: "1rem 0",
+            color: isActive ? "#7f8fb0" : "#374157",
+          }
+        }}
+        to={`${School.graduated}`}
+        key={School.graduated}
+        className="study_btn study_btn4"
+      ><Typography variant="subtitle2" className="study_Text">{School.type}</Typography>
+        <Typography variant="subtitle2" className="study_left"></Typography>
+        <Typography variant="subtitle2" className="study_right"></Typography>
+      </NavLink>
+    ))
   return (
-    <div style={{ display: "flex" }}>
+    <div style={{ display: "flex", padding: "200px 50px", justifyContent: "center", minHeight: '100vh' }}>
       <nav
         style={{
-          borderRight: "solid 1px",
-          padding: "1rem",
+          padding: "0 75px 0 0",
+          maxWidth: '25%',
         }}
       >
-        <input
-          value={searchParams.get("filter") || ""}
-          onChange={(event) => {
-            let filter = event.target.value
-            if (filter) {
-              setSearchParams({ filter })
-            } else {
-              setSearchParams({})
-            }
-          }}
-        />
-        {Schools
-          .filter((School) => {
-            let filter = searchParams.get("filter")
-            if (!filter) return true
-            let type = School.type.toLowerCase()
-            return type.startsWith(filter.toLowerCase())
-          })
-          .map((School) => (
-            <NavLink
-              style={({ isActive }) => {
-                return {
-                  display: "block",
-                  margin: "1rem 0",
-                  color: isActive ? "red" : "",
-                }
-              }}
-              to={`${School.graduated}`}
-              key={School.graduated}
-            >
-              {School.type}
-            </NavLink>
-          ))}
+        <div className="study_buttons">
+          {School}
+        </div>
       </nav>
-      <Outlet />
-    </div>
+      <div className="studyBox">
+        <div className="study_container button-86">
+          <Outlet />
+        </div>
+      </div>
+    </div >
   )
 }

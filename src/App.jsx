@@ -6,6 +6,9 @@ import {
 } from "react-router-dom"
 import RouterLink from './router/RouterLink'
 
+// Animat.css
+import 'animate.css'
+
 // 自我介紹
 import Self from './pages/Self'
 
@@ -19,6 +22,10 @@ import Job from "./pages/Job"
 // 工作經歷
 import Future from "./pages/Future"
 
+// Home
+import Home from './pages/Home'
+
+import Typography from '@mui/material/Typography'
 
 function App() {
   return (
@@ -36,7 +43,7 @@ function App() {
                 index
                 element={
                   <main style={{ padding: "1rem" }}>
-                    <p>Select an School</p>
+                    <p> {'請點 button !!'} </p>
                   </main>
                 }
               />
@@ -59,13 +66,34 @@ function App() {
                 </main>
               }
             />
+
+            {/* 進入路由前的預設 (home) */}
+            <Route
+              index
+              element={
+                <Home />
+              }
+            />
           </Route>
         </Routes>
       </BrowserRouter>
-      <div>
-        <h1>這裡是FOOTER</h1>
-      </div>
-    </div>
+      <div style={{backgroundColor: '#374157', padding: '25px 150px', display: 'flex', justifyContent: 'space-between' ,alignItems:"center"}}>
+        <div style={{ display: 'flex', justifyContent: 'space-around' ,width:"110px"}}>
+          <a href="#" onClick={(e) => (e.preventDefault())}>
+            <i className="fab fa-facebook fa-2x" style={{ color: "#d1dddb" }} />
+          </a>
+          <a href="#" onClick={(e) => (e.preventDefault())}>
+            <i className="fab fa-github fa-2x" style={{ color: "#d1dddb" }} />
+          </a>
+          <a href="#" onClick={(e) => (e.preventDefault())}>
+            <i className="fab fa-instagram fa-2x" style={{ color: "#d1dddb" }} />
+          </a>
+        </div>
+        <div style={{ color: "#d1dddb" }}>
+          <Typography >© 2022 All Rights Reserved</Typography>
+        </div>
+      </div >
+    </div >
   )
 }
 

@@ -10,14 +10,14 @@ import Button from '@mui/material/Button'
 import Avatar from '@mui/material/Avatar'
 import logo from '../assets/images/logo.jpg'
 
-function ExampleRouter() {
+function RouterLink() {
   return (
     <div>
       <Box>
-        <AppBar component="nav" position="sticky" color="main-color" sx={{ padding: "10px 125px" }}>
+        <AppBar component="nav" position="sticky" color="main-darker" sx={{ padding: "25px 125px" }}>
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
             <NavLink to="/" style={({ isActive }) => ({
-              color: isActive ? '#374157' : '#d1dddb',
+              color: isActive ? '#7f8fb0' : '#d1dddb',
               textDecoration: 'none',
             })}>
               <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -31,7 +31,7 @@ function ExampleRouter() {
                     EN
                   </Typography>
                   <Typography variant="subtitle2" >
-                    aka Yile GD
+                    aka GBAO GD
                   </Typography>
                 </Box>
               </Box>
@@ -40,7 +40,7 @@ function ExampleRouter() {
 
               <Button sx={{ color: '#d1dddb', padding: 0, margin: "0 20px" }}>
                 <NavLink to="Self" style={({ isActive }) => ({
-                  color: isActive ? '#374157' : '#d1dddb',
+                  color: isActive ? '#7f8fb0' : '#d1dddb',
                   textDecoration: 'none',
                   padding: "20px"
                 })}>
@@ -52,7 +52,7 @@ function ExampleRouter() {
 
               <Button sx={{ color: '#d1dddb', padding: 0, margin: "0 20px" }}>
                 <NavLink to="Study" style={({ isActive }) => ({
-                  color: isActive ? '#374157' : '#d1dddb',
+                  color: isActive ? '#7f8fb0' : '#d1dddb',
                   textDecoration: 'none',
                   padding: "20px"
                 })}>
@@ -64,7 +64,7 @@ function ExampleRouter() {
 
               <Button sx={{ color: '#d1dddb', padding: 0, margin: "0 20px" }}>
                 <NavLink to="Job" style={({ isActive }) => ({
-                  color: isActive ? '#374157' : '#d1dddb',
+                  color: isActive ? '#7f8fb0' : '#d1dddb',
                   textDecoration: 'none',
                   padding: "20px"
                 })}>
@@ -76,7 +76,7 @@ function ExampleRouter() {
 
               <Button sx={{ color: '#d1dddb', padding: 0, margin: "0 20px" }}>
                 <NavLink to="Future" style={({ isActive }) => ({
-                  color: isActive ? '#374157' : '#d1dddb',
+                  color: isActive ? '#7f8fb0' : '#d1dddb',
                   textDecoration: 'none',
                   padding: "20px"
                 })}>
@@ -91,7 +91,6 @@ function ExampleRouter() {
         </AppBar>
       </Box>
       <div className={"wrap"}>
-        <Outlet />
         <ul className={"circles"}>
           <li></li>
           <li></li>
@@ -104,9 +103,10 @@ function ExampleRouter() {
           <li></li>
           <li></li>
         </ul>
+        <Outlet />
       </div>
     </div>
   )
 }
 
-export default ExampleRouter
+export default RouterLink

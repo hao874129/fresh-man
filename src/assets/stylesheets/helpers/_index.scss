@@ -1,9 +1,6 @@
-.indexLinkIsActive {
-  color: "#374157";
-}
-
-.indexLinkIsNotActive {
-  color: "#d1dddb";
+//cursor
+body{
+  overflow-x: hidden;
 }
 
 // 設定網頁背景色
@@ -11,7 +8,7 @@
   position: relative;
   background-color: #F2F0ED;
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
 }
 
 // 設定氣泡的位置範圍
