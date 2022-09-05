@@ -1,6 +1,6 @@
 // Router 設定
 import {
-  BrowserRouter,
+  // HashRouter,
   Routes,
   Route,
 } from "react-router-dom"
@@ -30,7 +30,7 @@ import Typography from '@mui/material/Typography'
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      {/* <HashRouter> */}
         <Routes>
           <Route path="/" element={<RouterLink />}>
             {/* 自我介紹 */}
@@ -77,7 +77,7 @@ function App() {
             />
           </Route>
         </Routes>
-      </BrowserRouter>
+      {/* </HashRouter> */}
       <div style={{backgroundColor: '#374157', padding: '25px 150px', display: 'flex', justifyContent: 'space-between' ,alignItems:"center"}}>
         <div style={{ display: 'flex', justifyContent: 'space-around' ,width:"110px"}}>
           <a href="#" onClick={(e) => (e.preventDefault())}>
