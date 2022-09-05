@@ -39,7 +39,7 @@ function RouterLink() {
             <Box sx={{ display: 'block flex', justifyContent: 'flex-end' }}>
 
               <Button sx={{ color: '#d1dddb', padding: 0, margin: "0 20px" }}>
-                <NavLink to="Self" style={({ isActive }) => ({
+                <NavLink to="/Self" style={({ isActive }) => ({
                   color: isActive ? '#7f8fb0' : '#d1dddb',
                   textDecoration: 'none',
                   padding: "20px"
@@ -51,7 +51,7 @@ function RouterLink() {
               </Button>
 
               <Button sx={{ color: '#d1dddb', padding: 0, margin: "0 20px" }}>
-                <NavLink to="Study" style={({ isActive }) => ({
+                <NavLink to="/Study" style={({ isActive }) => ({
                   color: isActive ? '#7f8fb0' : '#d1dddb',
                   textDecoration: 'none',
                   padding: "20px"
@@ -63,7 +63,7 @@ function RouterLink() {
               </Button>
 
               <Button sx={{ color: '#d1dddb', padding: 0, margin: "0 20px" }}>
-                <NavLink to="Job" style={({ isActive }) => ({
+                <NavLink to="/Job" style={({ isActive }) => ({
                   color: isActive ? '#7f8fb0' : '#d1dddb',
                   textDecoration: 'none',
                   padding: "20px"
@@ -75,7 +75,7 @@ function RouterLink() {
               </Button>
 
               <Button sx={{ color: '#d1dddb', padding: 0, margin: "0 20px" }}>
-                <NavLink to="Future" style={({ isActive }) => ({
+                <NavLink to="/Future" style={({ isActive }) => ({
                   color: isActive ? '#7f8fb0' : '#d1dddb',
                   textDecoration: 'none',
                   padding: "20px"
