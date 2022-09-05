@@ -4,9 +4,6 @@ import ReactDOM from 'react-dom/client'
 // import './index.css'
 import reportWebVitals from './reportWebVitals'
 
-// Hash Ruters
-import { HashRouter } from "react-router-dom"
-
 // 背景泡泡
 import App from './App'
 import './assets/css/all.css'
@@ -44,9 +41,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <ThemeProvider theme={theme}>
     {/* <StrictMode> */}
-    <HashRouter>
       <App />
-    </HashRouter>
     {/* </StrictMode> */}
   </ThemeProvider>
 )
