@@ -22,7 +22,7 @@ export default function App() {
             color: isActive ? "#7f8fb0" : "#374157",
           }
         }}
-        to={`${School.graduated}`}
+        to={`/Study/${School.graduated}`}
         key={School.graduated}
         className="study_btn study_btn4"
       ><Typography variant="subtitle2" className="study_Text">{School.type}</Typography>
