@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fresh-man/static/css/main.8933b6a3.css",
-    "main.js": "/fresh-man/static/js/main.40b78b93.js",
+    "main.js": "/fresh-man/static/js/main.63b1b6f1.js",
     "static/js/787.ef56f945.chunk.js": "/fresh-man/static/js/787.ef56f945.chunk.js",
     "static/media/selfBanner1.jpg": "/fresh-man/static/media/selfBanner1.40282d48331a0ae18fa8.jpg",
     "static/media/studyCardBG5.jpg": "/fresh-man/static/media/studyCardBG5.82dd999e0b1880a9d8db.jpg",
@@ -39,11 +39,11 @@
     "static/media/card2.jpg": "/fresh-man/static/media/card2.908d01333c3765280b11.jpg",
     "index.html": "/fresh-man/index.html",
     "main.8933b6a3.css.map": "/fresh-man/static/css/main.8933b6a3.css.map",
-    "main.40b78b93.js.map": "/fresh-man/static/js/main.40b78b93.js.map",
+    "main.63b1b6f1.js.map": "/fresh-man/static/js/main.63b1b6f1.js.map",
     "787.ef56f945.chunk.js.map": "/fresh-man/static/js/787.ef56f945.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8933b6a3.css",
-    "static/js/main.40b78b93.js"
+    "static/js/main.63b1b6f1.js"
   ]
 }
