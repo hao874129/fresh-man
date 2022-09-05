@@ -27,8 +27,7 @@ function App() {
             options={{
               strings: [
                 "Hi !    I am Ian",
-                "Hi !    I am EN",
-                "Hi !    I am GD"
+                "Hi !    I am EN"
               ],
               autoStart: true,
               loop: true,
