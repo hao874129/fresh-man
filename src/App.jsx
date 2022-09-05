@@ -34,10 +34,10 @@ function App() {
         <Routes>
           <Route path="/" element={<RouterLink />}>
             {/* 自我介紹 */}
-            <Route path="/Self" element={<Self />} />
+            <Route path="Self" element={<Self />} />
 
             {/* 學習歷程 */}
-            <Route path="/Study" element={<Study />} >
+            <Route path="Study" element={<Study />} >
               {/* 點選路由前的預設 */}
               <Route
                 index
@@ -52,10 +52,10 @@ function App() {
             </Route>
 
             {/* 工作經歷 */}
-            <Route path="/Job" element={<Job />} />
+            <Route path="Job" element={<Job />} />
 
             {/* 未來展望 */}
-            <Route path="/Future" element={<Future />} />
+            <Route path="Future" element={<Future />} />
 
             {/* 錯誤路由 */}
             <Route
