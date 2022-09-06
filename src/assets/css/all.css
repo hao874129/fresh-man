@@ -3766,7 +3766,7 @@ input[type=button].btn-block {
   min-height: 1.5rem;
   padding-left: 1.5rem;
   -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
+     color-adjust: exact;
           print-color-adjust: exact;
 }
 
@@ -11485,17 +11485,17 @@ body {
 }
 
 .banner-img-1 {
-  background-image: url(../images/selfBanner1.jpg);
-  height: 500px;
-}
-
-.banner-img-2 {
   background-image: url(../images/selfBanner2.png);
   height: 500px;
 }
 
-.banner-img-3 {
+.banner-img-2 {
   background-image: url(../images/selfBanner3.png);
+  height: 500px;
+}
+
+.banner-img-3 {
+  background-image: url(../images/selfBanner1.jpg);
   height: 500px;
 }
 

@@ -21,17 +21,17 @@ $second-color: #7f8fb0;
 }
 
 .banner-img-1 {
-    background-image: url(../images/selfBanner1.jpg);
-    height: 500px;
-}
-
-.banner-img-2 {
     background-image: url(../images/selfBanner2.png);
     height: 500px;
 }
 
-.banner-img-3 {
+.banner-img-2 {
     background-image: url(../images/selfBanner3.png);
+    height: 500px;
+}
+
+.banner-img-3 {
+    background-image: url(../images/selfBanner1.jpg);
     height: 500px;
 }
 
