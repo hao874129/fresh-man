@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fresh-man/static/css/main.8933b6a3.css",
+    "main.css": "/fresh-man/static/css/main.c5088d8c.css",
     "main.js": "/fresh-man/static/js/main.de048066.js",
     "static/js/787.ef56f945.chunk.js": "/fresh-man/static/js/787.ef56f945.chunk.js",
     "static/media/selfBanner1.jpg": "/fresh-man/static/media/selfBanner1.40282d48331a0ae18fa8.jpg",
@@ -38,12 +38,12 @@
     "static/media/card1.jpg": "/fresh-man/static/media/card1.c05cb88177476760d35c.jpg",
     "static/media/card2.jpg": "/fresh-man/static/media/card2.908d01333c3765280b11.jpg",
     "index.html": "/fresh-man/index.html",
-    "main.8933b6a3.css.map": "/fresh-man/static/css/main.8933b6a3.css.map",
+    "main.c5088d8c.css.map": "/fresh-man/static/css/main.c5088d8c.css.map",
     "main.de048066.js.map": "/fresh-man/static/js/main.de048066.js.map",
     "787.ef56f945.chunk.js.map": "/fresh-man/static/js/787.ef56f945.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8933b6a3.css",
+    "static/css/main.c5088d8c.css",
     "static/js/main.de048066.js"
   ]
 }
