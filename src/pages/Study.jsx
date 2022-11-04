@@ -7,8 +7,6 @@ import { getSchools } from "../components/study/StudySchoolData"
 // Study style
 import '../assets/css/study.css'
 
-import Typography from '@mui/material/Typography'
-
 export default function App() {
   let Schools = getSchools()
   let School = Schools
@@ -18,16 +16,16 @@ export default function App() {
           return {
             textDecoration: 'none',
             display: "block",
-            margin: "1rem 0",
-            color: isActive ? "#7f8fb0" : "#374157",
+            margin: "2rem 0",
+            color: isActive ? "#888f9b" : "#374157",
           }
         }}
         to={`/Study/${School.graduated}`}
         key={School.graduated}
         className="study_btn study_btn4"
-      ><Typography variant="subtitle2" className="study_Text">{School.type}</Typography>
-        <Typography variant="subtitle2" className="study_left"></Typography>
-        <Typography variant="subtitle2" className="study_right"></Typography>
+      ><span variant="subtitle2" className="study_Text">{School.type}</span>
+        <span variant="subtitle2" className="study_left"></span>
+        <span variant="subtitle2" className="study_right"></span>
       </NavLink>
     ))
   return (

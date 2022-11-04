@@ -5,160 +5,137 @@ $second-color: #7f8fb0;
 
 //全域//
 .main-bg {
-    background-color: #F2F0ED; //#e2e1e1;
+  background-color: #F2F0ED; //#e2e1e1;
 }
 
 /* header */
 .bg-cover {
-    background-size: cover;
-    background-position: center center;
+  background-size: cover;
+  background-position: center center;
 }
 
 .header-box-section {
-    position: relative;
-    margin-top: -100px;
-    z-index: 1;
-}
-
-.banner-img-1 {
-    background-image: url(../images/selfBanner2.png);
-    height: 500px;
-}
-
-.banner-img-2 {
-    background-image: url(../images/selfBanner3.png);
-    height: 500px;
-}
-
-.banner-img-3 {
-    background-image: url(../images/selfBanner1.jpg);
-    height: 500px;
+  position: relative;
+  margin-top: -100px;
+  z-index: 1;
 }
 
 /* //index// */
 .header-box-wrap {
-    position: relative;
-    height: 270px;
+  position: relative;
+  height: 270px;
+
+  .header-box-text {
+    letter-spacing: 10px;
+    writing-mode: vertical-rl;
+  }
+
+  .header-box-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $second-color;
+    opacity: 0.95;
+    z-index: -1;
+    transition: all .7s;
+  }
+
+  .header-box-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -2;
+  }
+
+  &:hover {
+    .header-box-cover {
+      background-color: $main-darker;
+      opacity: 0.7;
+    }
 
     .header-box-text {
-        letter-spacing: 10px;
-        writing-mode: vertical-rl;
+      color: white;
     }
-
-    .header-box-cover {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: $second-color;
-        opacity: 0.95;
-        z-index: -1;
-        transition: all .7s;
-    }
-
-    .header-box-img {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        z-index: -2;
-    }
-
-    &:hover {
-        .header-box-cover {
-            background-color: $main-darker;
-            opacity: 0.7;
-        }
-
-        .header-box-text {
-            color: white;
-        }
-    }
-
-    .header-box-1 {
-        background-image: url(../images/selfBoxBG1.jpg);
-    }
-
-    .header-box-2 {
-        background-image: url(../images/selfBoxBG2.jpg);
-    }
-
-    .header-box-3 {
-        background-image: url(../images/selfBoxBG3.JPG);
-    }
+  }
 }
 
 .header-box-border {
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 }
 
 
 /* //self// */
 .section-self-img {
-    min-height: 200px;
-    margin: 5px 0px;
+  min-height: 200px;
+  margin: 5px 0px;
 }
 
 .section-over {
-    margin-top: -40px;
-    margin-bottom: -30px;
+  margin-top: -40px;
+  margin-bottom: -30px;
 }
 
 .vertical-content {
-    max-height: 420px;
-    line-height: 2.5;
+  max-height: 420px;
+  line-height: 2.5;
 }
 
 .vertical-content-text {
-    line-height: 1.5;
-    writing-mode: vertical-rl;
-    line-height: 2;
+  line-height: 1.5;
+  writing-mode: vertical-rl;
+  line-height: 2;
 
-    &.verticla-title {
-        letter-spacing: 8px;
-    }
+  &.verticla-title {
+    letter-spacing: 8px;
+  }
+}
+
+.me-img-1 {
+  background-image: url(../images/me2.jpg);
 }
 
 .self-img-1 {
-    background-image: url(../images/card6.jpg);
+  background-image: url(../images/htmlPrograming.jpeg);
 }
 
 .self-img-1:hover {
-    animation: headShake;
-    animation-duration: 1s;
-    // transition: all .7s;
-    background-image: url(../images/amis.png);
+  animation: headShake;
+  animation-duration: 1s;
+  // transition: all .7s;
+  background-image: url(../images/baseSkills.jpeg);
 }
 
 .self-img-2 {
-    background-image: url(../images/card6.jpg);
+  background-image: url(../images/vue.jpeg);
 }
 
 .self-img-2:hover {
-    animation: headShake;
-    animation-duration: 1s;
-    background-image: url(../images/hakka.png);
+  animation: headShake;
+  animation-duration: 1s;
+  background-image: url(../images/yile1.jpeg);
 }
 
 .self-img-3 {
-    background-image: url(../images/gordon.png);
+  background-image: url(../images/bootstrap.png);
 }
 
 .self-img-3:hover {
-    animation: headShake;
-    animation-duration: 1s;
-    background-image: url(../images/jcole.png);
+  animation: headShake;
+  animation-duration: 1s;
+  background-image: url(../images/MUI.png);
 }
 
 .self-img-4 {
-    background-image: url(../images/Kobe.png);
+  background-image: url(../images/hardware.jpeg);
 }
 
 .self-img-4:hover {
-    animation: headShake;
-    animation-duration: 1s;
-    background-image: url(../images/dreamers.png);
+  animation: headShake;
+  animation-duration: 1s;
+  background-image: url(../images/SQL.jpeg);
 }

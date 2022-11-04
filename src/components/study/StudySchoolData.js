@@ -7,7 +7,7 @@ let schools = [
     special: {
       IM: {
         major: '資管系',
-        bro: ['KEN','蔡尾']
+        bro: ['IM','IT']
       },
       basketball: {
         major: '資管系籃',
@@ -15,7 +15,7 @@ let schools = [
       },
       hotDacnceClub: {
         major: '熱舞社',
-        bro: ['黑達','蛋堡']
+        bro: ['彰雲嘉評鑑特優','熱舞社成發']
       }
     }
   },
@@ -24,6 +24,16 @@ let schools = [
     type: "Senior High School",
     graduated : 2017,
     year: "Sep 2014 - Jun 2017",
+    special: {
+      information: {
+        name: '資訊科',
+        major: ['電子學']
+      },
+      scouts: {
+        name: '童軍社',
+        position: ['活動長']
+      }
+    }
   },
   {
     name: "大甲國中",

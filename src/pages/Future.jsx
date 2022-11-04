@@ -37,7 +37,7 @@ function Med() {
       <div className="future_face future_face1">
         <div className="future_content">
           <div className="future_icon">
-            <i className="fa fa-solid fa-face-kiss-wink-heart" aria-hidden="true"></i>
+            <i className="fa fa-brands fa-node-js " aria-hidden="true"></i>
           </div>
         </div>
       </div>

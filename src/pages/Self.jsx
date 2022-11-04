@@ -1,13 +1,13 @@
 import React from "react"
-import Box from '@mui/material/Box'
-import Container from '@mui/material/Container'
+import Box from "@mui/material/Box"
+import Container from "@mui/material/Container"
 
 export default function SimpleContainer() {
   return (
-    <div style={{ minHeight: '100vh', padding: "10vh 0" }}>
+    <div style={{ minHeight: "100vh", padding: "10vh 0" }}>
       <Container>
         {/* <!-- HEADER --> */}
-        <div className="main-bg">
+        {/* <div className="main-bg">
           <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
             <div className="carousel-inner">
               <div className="carousel-item active banner-main-img bg-cover banner-img-1">
@@ -56,11 +56,45 @@ export default function SimpleContainer() {
               </div>
             </div>
           </div>
-        </div>
-
+        </div> */}
       </Container>
+
       <Box>
-        {/* <!-- 為什麼選擇了製作傢俱 --> */}
+        <section className="section my-9">
+          <div className="bg-main-lighter">
+            <div className="container">
+              <div className="row">
+                <div className="col-6 d-flex justify-content-start vertical-content px-2">
+                  <h2 className="text-main-darker section-over d-block font-weight-bold">
+                    －黃隆豪－<br />
+                    <span className="mt-4">EN Huang</span>
+                  </h2>
+                  <p className="text-main-color py-5 py-4">
+                    -Age: 23|1998/12/9 <br />
+                    <br />
+                    -Education: NYUST<br />
+                    <br />
+                    -Location: Taichung,Taiwan
+                  </p>
+                </div>
+                <div className="col-6 section-over">
+                  <div className="bg-cover h-100 section-self-img me-img-1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="my-5 my-8 text-main-darker d-flex flex-column align-items-center">
+          <h2 className="vertical-content-text verticla-title d-block font-weight-bold">
+            You can&apos;t connect the －<br />
+            <span className="mt-5">
+              dots looking forward <i className="fas fa-smile-wink"></i>
+            </span>
+          </h2>
+        </section>
+
+        {/* <!-- 基礎前端技能 --> */}
         <section className="section my-9">
           <div className="bg-main-lighter">
             <div className="container">
@@ -70,15 +104,17 @@ export default function SimpleContainer() {
                 </div>
                 <div className="col-6 d-flex justify-content-end vertical-content px-2">
                   <p className="text-main-color vertical-content-text py-5 py-4">
-                    最好是艷陽天 ， 約在海邊不散不見 ， <br />
+                    Javascript。 Typescript。<br />
                     <br />
-                    一定有人爽約 ， 喝太多起不來之類 ， <br />
+                    AJAX。 RESTful API。 Axios 套件。 <br />
                     <br />
-                    到底 。
+                    HTML。 RWD設計。 <br />
+                    <br />
+                    CSS。 SASS。 SCSS。
                   </p>
                   <h2 className="text-main-darker vertical-content-text section-over verticla-title d-block font-weight-bold">
-                    壹點參伍 －<br />
-                    <span className="mt-4">天生的血繼限界。</span>
+                    基礎前端技能 －<br />
+                    <span className="mt-4">Basic F2E Skills </span>
                   </h2>
                 </div>
               </div>
@@ -86,7 +122,7 @@ export default function SimpleContainer() {
           </div>
         </section>
 
-        {/* <!-- 為什麼一定要購買傢俱 --> */}
+        {/* <!-- ＪＳ框架--> */}
         <section className="section my-9">
           <div className="bg-main-lighter">
             <div className="container">
@@ -96,15 +132,13 @@ export default function SimpleContainer() {
                 </div>
                 <div className="col-6 d-flex justify-content-end vertical-content px-2">
                   <p className="text-main-color vertical-content-text py-5 py-4">
-                    唐山過台灣 ， 沒半點錢 ， <br />
+                    React。 <br />
                     <br />
-                    剎猛打拚耕山耕田 ， 咬薑啜醋幾十年 ，<br />
-                    <br />
-                    毋識埋怨 。
+                    Vue。
                   </p>
                   <h2 className="text-main-darker vertical-content-text section-over verticla-title d-block font-weight-bold">
-                    。。。 －<br />
-                    <span className="mt-4">。。。。。。。？</span>
+                    ＪＳ框架 －<br />
+                    <span className="mt-4">JS Framework </span>
                   </h2>
                 </div>
               </div>
@@ -112,7 +146,7 @@ export default function SimpleContainer() {
           </div>
         </section>
 
-        {/* <!-- 為什麼選擇了製作傢俱 --> */}
+        {/* <!-- ＵＩ框架 --> */}
         <section className="section my-9">
           <div className="bg-main-lighter">
             <div className="container">
@@ -122,15 +156,13 @@ export default function SimpleContainer() {
                 </div>
                 <div className="col-6 d-flex justify-content-end vertical-content px-2">
                   <p className="text-main-color vertical-content-text py-5 py-4">
-                    賺大錢就是大爺 ， 玉蘭卻不買 ， 沒人同情賣花的阿伯 。<br />
+                    Bootstrap。 <br />
                     <br />
-                    正義猶如謊言 ， 真理萬化千變 ， <br />
-                    <br />
-                    我們所相信的 ， 埋在瓦礫堆 。 <br />
+                    Material-UI。
                   </p>
                   <h2 className="text-main-darker vertical-content-text section-over verticla-title d-block font-weight-bold">
-                    文字是他的武器 －<br />
-                    <span className="mt-4">無盡彈藥藏在一字一句</span>
+                    ＵＩ框架 －<br />
+                    <span className="mt-4">UI Framework </span>
                   </h2>
                 </div>
               </div>
@@ -138,7 +170,7 @@ export default function SimpleContainer() {
           </div>
         </section>
 
-        {/* <!-- 為什麼一定要購買傢俱 --> */}
+        {/* <!--  其他技能 --> */}
         <section className="section my-9">
           <div className="bg-main-lighter">
             <div className="container">
@@ -148,13 +180,16 @@ export default function SimpleContainer() {
                 </div>
                 <div className="col-6 d-flex justify-content-end vertical-content px-2">
                   <p className="text-main-color vertical-content-text py-5 py-4">
-                    還是不習慣講 Skr <br />
+                    C。 Java。 <br />
                     <br />
-                    最死忠的科粉 ， 習慣不了詹姆士穿紫色 。
+                    Python。 R Language。 <br />
+                    <br />
+                    XScript。 SQL。 <br />
+                    <br />
                   </p>
                   <h2 className="text-main-darker vertical-content-text section-over verticla-title d-block font-weight-bold">
-                    你放棄的那刻 －<br />
-                    <span className="mt-4">就是別人獲勝的時刻。</span>
+                    其他技能 －<br />
+                    <span className="mt-4">Other Skills </span>
                   </h2>
                 </div>
               </div>
@@ -162,11 +197,12 @@ export default function SimpleContainer() {
           </div>
         </section>
 
-        {/* <!-- 好的傢俱是不需要理由的 --> */}
         <section className="my-5 my-8 text-main-darker d-flex flex-column align-items-center">
           <h2 className="vertical-content-text verticla-title d-block font-weight-bold">
-            這裡有一行字 －<br />
-            <span className="mt-5">是完全不需要看的 <i className="fas fa-smile-wink"></i></span>
+            You can only connect －<br />
+            <span className="mt-5">
+              them looking backwards <i className="fas fa-smile-wink"></i>
+            </span>
           </h2>
         </section>
       </Box>

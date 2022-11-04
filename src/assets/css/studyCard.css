@@ -10,13 +10,13 @@
   align-items: center;
   border: 2px solid #374157;
   margin-bottom: 50px;
-  background-image: url("../images/studyCardBG3.jpg");
+  /* background-image: url("../images/studyCardBG3.jpg"); */
   background-size: cover;
 }
 
 .study_card_part_name {
-  color: #d1dddb;
-  text-shadow: 3px 3px 1px #374157;
+  color: #CDCDCD;
+  text-shadow: 3px 3px 1px #848484;
   writing-mode: vertical-rl;
 }
 
@@ -26,10 +26,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  background: #d1dddb;
-  border: 2px solid #374157;
-  border-radius: 10px;
-  padding: 20px;
+  background: #888f9b;
+  border: 4spx solid #6b7077;
+  border-radius: 4px;
+  padding: 20px 30px;
 }
 
 
@@ -37,23 +37,35 @@
   display: flex;
   align-items: center;
   margin-bottom: 5%;
-  margin-right: 20%;
 }
 
 
 .study_card_title {
   text-align: center;
-  color: #374157;
-  text-shadow: 0px 2px 2px #d1dddb;
-  /* left: 95%; */
-  padding-left: 5%;
+  color: #fff;
+  text-shadow: 0px 0px 2px #6b7077;
+  padding-left: 4%;
 }
 
-.study_card2 {
+/* !!! test */
+.study_card_University1{
+  background-image: url("../images/studyCardBG3.jpg");
+}
+
+.study_card_University2 {
   flex-direction: row;
   background-image: url("../images/studyCardBG2.jpg");
 }
 
-.study_card3 {
+.study_card_University3 {
   background-image: url("../images/studyCardBG5.jpg");
+}
+
+.study_card_SeniorHighSchool1{
+  background-image: url("../images/IC.jpeg");
+}
+
+.study_card_SeniorHighSchool2 {
+  flex-direction: row;
+  background-image: url("../images/scouts.jpeg");
 }

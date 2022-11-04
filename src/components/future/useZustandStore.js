@@ -2,19 +2,19 @@ import create from 'zustand'
 
 const useZustandStore = create((set) => ({
   short: [
-    { id: 's1', content: "認識公司的全部人" },
-    { id: 's2', content: "精進前端技術(React...)" },
-    { id: 's3', content: "籃球學會左手切入" },
-    { id: 's4', content: "交女友" }
+    { id: 's1', content: "熟悉 TypeScript" },
+    { id: 's2', content: "精進前端技術" },
+    { id: 's3', content: "藉由美劇提升英文能力" },
+    { id: 's4', content: "刷 Leetcode 熟悉資結與演算法" }
   ],
   med: [
-    { id: 'm1', content: "精進英文能力" },
+    { id: 'm1', content: "學習後端技術( Node.js、ASP.NET )" },
     { id: 'm2', content: "具備獨立完成專案的能力" }
   ],
   long: [
     { id: 'l1', content: "財富自由" },
     { id: 'l2', content: "衣錦還鄉" },
-    // { id: 10, content: "選里長" }
+    // { id: 'l3', content: "選里長" }
   ],
   clickShort: () => {
     return set((state) => {
@@ -57,14 +57,27 @@ const useZustandStore = create((set) => ({
     })
   },
   clickLong: () => {
-    return set(state => {
-      if (state.long.length >= 4) {
-        console.log('****useZustandStore_clickLong: Long長度大於4,不執行')
+    // return set(state => {
+    //   if (state.long.length >= 4) {
+    //     console.log('****useZustandStore_clickLong: Long長度大於4,不執行')
+    //     return
+    //   }
+    //   // 將 long 陣列 push出一個 選里長的計畫
+    //   let newLong = [...state.long]
+    //   newLong.push({ id: 'l3', content: "選里長" })
+    //   console.log(':::useZustandStore_clickLong_newLong: ', newLong)
+    //   return {
+    //     long: newLong
+    //   }
+    // })
+    return set((state) => {
+      const target = state.long.find(target => target.id === 'l3')
+      if (target) {
+      console.log('****useZustandStore_clickLong: long中id=l3的物件已經有了')
         return
       }
-      // 將 long 陣列 push出一個 選里長的計畫
       let newLong = [...state.long]
-      newLong.push({ id: 10, content: "選里長" })
+      newLong.push({ id: 'l3', content: "美式餐酒館" })
       console.log(':::useZustandStore_clickLong_newLong: ', newLong)
       return {
         long: newLong

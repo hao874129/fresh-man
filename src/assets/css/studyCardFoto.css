@@ -5,8 +5,8 @@
   align-items: center;
 }
 .study_card_foto_card {
-  height: 250px;
-  width: 250px;
+  height: 150px;
+  width: 150px;
   background: #808080;
   border-radius: 10px;
   transition: background 0.8s;
@@ -16,56 +16,51 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative
+  position: relative;
 }
 .study_card_foto_card1 {
-  background: url("../images/ken.png") center center no-repeat;
-  background-size: 250px;
-}
-.study_card_foto_card1:hover {
-  background: url("../images/card1.jpg") left center no-repeat;
-  background-size: 250px;
+  background: url("../images/IM.jpeg") center center no-repeat;
+  background-size: 150px;
 }
 
 .study_card_foto_card2 {
-  background: url("../images/tsai.png") center center no-repeat;
-  background-size: 250px;
-}
-.study_card_foto_card2:hover {
-  background: url("../images/card2.jpg") left center no-repeat;
-  background-size: 250px;
+  background: url("../images/IT.jpeg") center center no-repeat;
+  background-size: 150px;
 }
 
 .study_card_foto_card3 {
-  background: url("../images/LBJ1.png") center center no-repeat;
-  background-size: 250px;
+  background: url("../images/card3.jpg") center center no-repeat;
+  background-size: 150px;
 }
 .study_card_foto_card3:hover {
-  background: url("../images/card3.jpg") left center no-repeat;
-  background-size: 250px;
+  background: url("../images/LBJ1.png") left center no-repeat;
+  background-size: 150px;
 }
 .study_card_foto_card4 {
-  background: url("../images/LBJ2.png") center center no-repeat;
-  background-size: 250px;
+  background: url("../images/card4.jpg") center center no-repeat;
+  background-size: 150px;
 }
 .study_card_foto_card4:hover {
-  background: url("../images/card4.jpg") left center no-repeat;
-  background-size: 250px;
+  background: url("../images/LBJ2.png") left center no-repeat;
+  background-size: 150px;
 }
 
 .study_card_foto_card5 {
-  background: url("../images/heda.jpg") center center no-repeat;
-  background-size: 250px;
+  background: url("../images/hdc1.jpeg") center center no-repeat;
+  background-size: 150px;
 }
-.study_card_foto_card5:hover {
-  background: url("../images/card5.jpg") left center no-repeat;
-  background-size: 250px;
-}
+
 .study_card_foto_card6 {
-  background: url("../images/danbao.jpg") center center no-repeat;
-  background-size: 250px;
+  background: url("../images/hdc2.jpeg") center center no-repeat;
+  background-size: 150px;
 }
-.study_card_foto_card6:hover {
-  background: url("../images/card6.jpg") left center no-repeat;
-  background-size: 250px;
+
+.study_card_foto_card7 {
+  background: url("../images/information.jpeg") center center no-repeat;
+  background-size: 150px;
+}
+
+.study_card_foto_card8 {
+  background: url("../images/redOwl.jpg") center center no-repeat;
+  background-size: 150px;
 }

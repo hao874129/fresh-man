@@ -7,7 +7,7 @@
   position: relative;
   height: auto;
   min-width: 75%;
-  padding: 1rem;
+  padding: 8px;
   display: flex;
   justify-content: center;
   background: #5f6d89;
@@ -24,6 +24,16 @@
   justify-content: center;
 }
 
+.studyBox2 {
+  position: relative;
+  height: auto;
+  min-width: 75%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #DAD7D6;
+  border-radius: 2px;
+}
 
 /* button */
 
@@ -35,6 +45,7 @@
 }
 
 .study_buttons .study_btn {
+  font-size: 7px;
   display: flex;
   font-weight: 300;
   padding: 1rem 2rem;
@@ -42,10 +53,10 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  background-color: #d1dddb;
-  border: #374157 2px solid;
+  background-color: #a1adc6;
+  border: #888f9b 2px solid;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .study_buttons .study_btn4 .study_Text {
@@ -61,7 +72,7 @@
   top: 50%;
   height: 0;
   width: 0;
-  background: #d1dddb;
+  background: #a1adc6;
   transition: 0.5s;
   border-radius: 16px;
 }
@@ -73,7 +84,7 @@
 
 .study_buttons .study_btn4:hover .study_Text {
   background: #374157;
-  color: #fff;
+  color: #a1adc6;
 }
 
 .study_buttons .study_btn4:hover {

@@ -31,7 +31,7 @@ function RouterLink() {
                     EN
                   </Typography>
                   <Typography variant="subtitle2" >
-                    aka GBAO GD
+                    aka Dajia GD
                   </Typography>
                 </Box>
               </Box>

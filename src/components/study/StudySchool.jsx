@@ -6,9 +6,10 @@ import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 
 // Card
-import StudyCard from './StudyCard'
+import University from './University'
+import SeniorHighSchool from './SeniorHighSchool'
 // import React, { Suspense } from 'react'
-// const StudyCard = React.lazy(() => import('./StudyCard'))
+// const University = React.lazy(() => import('./University'))
 
 export default function Invoice() {
   let params = useParams()
@@ -20,21 +21,37 @@ export default function Invoice() {
       <Box style={{ padding: "1rem", 'zIndex': 2 }}>
         <Box style={{ marginBottom: '100px' }}>
           <Typography variant="h3" style={{ marginBottom: '8px' }}> {school.name} </Typography>
-          <Typography variant="subtitle2" style={{ color: '#d1dddb' }}> {school.year} </Typography>
+          <Typography variant="subtitle2" style={{ color: '#CDCDCD' }}> {school.year} </Typography>
         </Box>
         {/* <div>
           <Suspense fallback={<div>Loading...</div>}>
-            <StudyCard special={special} />
+            <University special={special} />
           </Suspense>
         </div> */}
-        <StudyCard special={special} />
+        <University special={special} />
+      </Box>
+    )
+  } else if (school.graduated === 2017) {
+    const special = school.special
+    return (
+      <Box style={{ padding: "1rem", 'zIndex': 2 }}>
+        <Box style={{ marginBottom: '100px' }}>
+          <Typography variant="h3" style={{ marginBottom: '8px' }}> {school.name} </Typography>
+          <Typography variant="subtitle2" style={{ color: '#CDCDCD' }}> {school.year} </Typography>
+        </Box>
+        {/* <div>
+          <Suspense fallback={<div>Loading...</div>}>
+            <University special={special} />
+          </Suspense>
+        </div> */}
+        <SeniorHighSchool special={special} />
       </Box>
     )
   }
   return (
     <Box style={{ padding: "1rem" }}>
       <Typography variant="h3" style={{ marginBottom: '8px' }}> {school.name} </Typography>
-      <Typography variant="subtitle2" style={{ color: '#d1dddb' }}> {school.year} </Typography>
+      <Typography variant="subtitle2" style={{ color: '#CDCDCD' }}> {school.year} </Typography>
     </Box>
   )
 }

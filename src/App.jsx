@@ -44,7 +44,10 @@ function App() {
                 index
                 element={
                   <main style={{ padding: "1rem" }}>
-                    <p> {'請點 button !!'} </p>
+                    <p>
+                      {' Choose a Period '}
+                      <i className="fas fa-smile-wink"></i>
+                    </p>
                   </main>
                 }
               />
@@ -79,8 +82,8 @@ function App() {
           </Route>
         </Routes>
       </HashRouter>
-      <div style={{backgroundColor: '#374157', padding: '25px 150px', display: 'flex', justifyContent: 'space-between' ,alignItems:"center"}}>
-        <div style={{ display: 'flex', justifyContent: 'space-around' ,width:"110px"}}>
+      <div style={{ backgroundColor: '#374157', padding: '25px 150px', display: 'flex', justifyContent: 'space-between', alignItems: "center" }}>
+        <div style={{ display: 'flex', justifyContent: 'space-around', width: "110px" }}>
           <a href="#" onClick={(e) => (e.preventDefault())}>
             <i className="fab fa-facebook fa-2x" style={{ color: "#d1dddb" }} />
           </a>

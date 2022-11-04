@@ -46,7 +46,7 @@
 .flip-front {
     color: #374157;
     border: 2px solid #374157;
-    background-color: #d1dddb;
+    background-color: #a1adc6;
     -webkit-transform: rotateX(0deg) translateZ(25px);
     -ms-transform: rotateX(0deg) translateZ(25px);
     -o-transform: rotateX(0deg) translateZ(25px);

@@ -9,8 +9,8 @@ import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import Avatar from '@mui/material/Avatar'
 import lihpao from '../../assets/images/lihpao.jpg'
-import robot from '../../assets/images/robot.jpg'
 import army from '../../assets/images/armys.jpg'
+import yuntech from '../../assets/images/yuntech.jpeg'
 
 export default function Yile(props) {
   const contents = props.contents
@@ -19,8 +19,8 @@ export default function Yile(props) {
     let src = (() => {
       if (content.src === 'lihpao') {
         return lihpao
-      } else if (content.src === 'robot') {
-        return robot
+      } else if (content.src === 'yuntech') {
+        return yuntech
       } else if (content.src === 'army') {
         return army
       }

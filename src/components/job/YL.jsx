@@ -8,8 +8,9 @@ import Typography from '@mui/material/Typography'
 import PropTypes from 'prop-types'
 // picture
 import Avatar from '@mui/material/Avatar'
-import yile1 from '../../assets/images/yile1.jpg'
-import yile2 from '../../assets/images/yile2.jpg'
+import yile1 from '../../assets/images/yile1.jpeg'
+import yile2 from '../../assets/images/yile2.jpeg'
+import yile3 from '../../assets/images/yile3.png'
 
 
 export default function Yile(props) {
@@ -21,7 +22,7 @@ export default function Yile(props) {
       } else if (content.num === 2) {
         return yile2
       } else if (content.num === 3) {
-        return yile1
+        return yile3
       }
     })()
     return (
